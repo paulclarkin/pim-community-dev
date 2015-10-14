@@ -120,7 +120,7 @@ define(
 
                 $.when(
                     this.loadAssociationTypes(),
-                    FetcherRegistry.getFetcher('attribute').getIdentifierField()
+                    FetcherRegistry.getFetcher('attribute').getIdentifierAttribute()
                 ).then(function (associationTypes, identifierAttribute) {
                     this.state.set(
                         'currentAssociationType',
