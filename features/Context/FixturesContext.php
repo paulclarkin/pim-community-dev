@@ -1837,7 +1837,7 @@ class FixturesContext extends RawMinkContext
     /**
      * @param string|array $data
      *
-     * @return \Pim\Bundle\CatalogBundle\Model\AttributeInterface
+     * @return \Pim\Component\Catalog\Model\AttributeInterface
      */
     protected function createAttribute($data)
     {
