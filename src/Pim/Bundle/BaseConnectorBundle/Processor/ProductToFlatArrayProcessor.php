@@ -7,7 +7,7 @@ use Akeneo\Bundle\BatchBundle\Item\ItemProcessorInterface;
 use Pim\Bundle\BaseConnectorBundle\Validator\Constraints\Channel;
 use Pim\Bundle\CatalogBundle\Manager\ChannelManager;
 use Pim\Component\Catalog\Model\ProductInterface;
-use Pim\Bundle\CatalogBundle\Model\ProductValueInterface;
+use Pim\Component\Catalog\Model\ProductValueInterface;
 use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -155,7 +155,7 @@ class ProductToFlatArrayProcessor extends AbstractConfigurableStepElement implem
      *
      * @param \Pim\Component\Catalog\Model\ProductInterface $product
      *
-     * @return ProductValueInterface[]
+     * @return \Pim\Component\Catalog\Model\ProductValueInterface[]
      */
     protected function getMediaProductValues(ProductInterface $product)
     {
