@@ -4,7 +4,7 @@ namespace Pim\Bundle\CatalogBundle\Factory;
 
 use Pim\Bundle\CatalogBundle\Entity\Family;
 use Pim\Bundle\CatalogBundle\Manager\ChannelManager;
-use Pim\Bundle\CatalogBundle\Model\FamilyInterface;
+use Pim\Component\Catalog\Model\FamilyInterface;
 use Pim\Bundle\CatalogBundle\Repository\AttributeRepositoryInterface;
 
 /**
@@ -41,7 +41,7 @@ class FamilyFactory
     }
 
     /**
-     * @return FamilyInterface
+     * @return \Pim\Component\Catalog\Model\FamilyInterface
      */
     public function createFamily()
     {
