@@ -35,4 +35,4 @@ ci:
         parameters:
             output_path: app/build/logs/behat/summary.log,app/build/logs/behat/
     filters:
-        tags: ~skip&&~doc
+        tags: ~skip&&~skip-pef&&~doc&&~unstable&&~unstable-app&&~deprecated&&~@unstable-app
